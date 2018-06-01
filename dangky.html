@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Đăng ký tài khoản</title>
+<link rel="stylesheet" type="text/css" href="assets/bootstrap-3.3.7-dist/css/bootstrap.min.css">
+<link href="css/bootstrap.css" rel="stylesheet" type="text/css" media="all" />
+<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+<script src="js/jquery.min.js"></script>
+<!-- Custom Theme files -->
+<!--theme-style-->
+<link href="css/style.css" rel="stylesheet" type="text/css" media="all" />	
+<!--//theme-style-->
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="keywords" content="Bonfire Responsive web template, Bootstrap Web Templates, Flat Web Templates, Andriod Compatible web template, 
+Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, SonyErricsson, Motorola web design" />
+<script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false); function hideURLbar(){ window.scrollTo(0,1); } </script>
+<!--fonts-->
+<link href='http://fonts.googleapis.com/css?family=Exo:100,200,300,400,500,600,700,800,900' rel='stylesheet' type='text/css'>
+<!--//fonts-->
+<script type="text/javascript" src="js/move-top.js"></script>
+<script type="text/javascript" src="js/easing.js"></script>
+				<script type="text/javascript">
+					jQuery(document).ready(function($) {
+						$(".scroll").click(function(event){		
+							event.preventDefault();
+							$('html,body').animate({scrollTop:$(this.hash).offset().top},1000);
+						});
+					});
+				</script>
+<!--slider-script-->
+		<script src="js/responsiveslides.min.js"></script>
+			<script>
+				$(function () {
+				  $("#slider1").responsiveSlides({
+					auto: true,
+					speed: 500,
+					namespace: "callbacks",
+					pager: true,
+				  });
+				});
+			</script>
+<!--//slider-script-->
+<script>$(document).ready(function(c) {
+	$('.alert-close').on('click', function(c){
+		$('.message').fadeOut('slow', function(c){
+	  		$('.message').remove();
+		});
+	});	  
+});
+</script>
+<script>$(document).ready(function(c) {
+	$('.alert-close1').on('click', function(c){
+		$('.message1').fadeOut('slow', function(c){
+	  		$('.message1').remove();
+		});
+	});	  
+});
+</script>
+</head>
+<body>
+	<div class="header">
+		<div class="header-top">
+			<div class="container">	
+			<div class="header-top-in">			
+				<div class="logo">
+					<a href="dangky.html"><img src="images/logo.png" alt=" " ></a>
+				</div>
+				<div class="header-in" style="margin-right: -70px">
+					<ul class="icon1 sub-icon1">
+							<li > <a href="#" >HOSTLINE</a> </li>	
+							
+					</ul>
+				</div>
+				<div class="clearfix"> </div>
+			</div>
+			</div>
+		</div>
+	</div>
+	<div class="container-fluid">
+		<div class="row">
+			<div class="col-md-12 col-lg-offset-2" style="margin-left: -2%">
+				<div class="account">
+						<h2 style="width: 1250px;margin-left: 7%"" class="account-in">Đăng ký tài khoản</h2>
+						<form  class="form-horizontal" method="POST" action="" name="fdangki" id="fdangki" >
+							<div class="form-group">
+								<label class="col-sm-2 control-label">Họ tên<b style="color: red">*</b></label>
+									<input class="col-sm-10" id="txthoten" name="txthoten" type="text" placeholder="Họ và tên" style=" width: 400px" required autofocus>
+									<label class="col-sm-2 control-label">Email<b style="color: red">*</b></label>
+									<input class="col-sm-10" id="txtemail" name="txtemail" type="text" placeholder="Email" style="width: 400px" required autofocus>	
+							</div>
+							<div class="form-group">
+								<label class="col-sm-2 control-label">Ngày sinh<b style="color: red">*</b></label>
+									<input class="col-sm-10" id="txtngay" name="txtngay" type="date" placeholder="Ngày sinh" style="width: 400px;border-radius: 10px" required autofocus>
+								<label class="col-sm-2 control-label">Tên đăng nhập<b style="color: red">*</b></label>
+									<input class="col-sm-10" id="txttendangnhap" name="txttendangnhap" type="text" placeholder="Tên dăng nhập" style="width: 400px" required autofocus>	
+							</div>
+							
+							<div class="form-group">
+								<label class="col-sm-2 control-label">Địa chỉ<b style="color: red">*</b></label>
+									<input class="col-sm-10" id="txtdịachi" name="txtdịachi" type="text" placeholder="Điạ chỉ" style="width: 400px;border-radius: 10px" required autofocus>
+									<label class="col-sm-2 control-label">Mật khẩu<b style="color: red">*</b></label>
+									<input class="col-sm-10" id="txtmatkhau" name="txtmatkhau" type="password" placeholder="Mật khẩu" style="width: 400px" required autofocus>
+									
+							</div>
+							<div class="form-group">
+								
+									<label class="col-sm-2 control-label">Số điện thoại<b style="color: red">*</b></label>
+									<input class="col-sm-10" id="txtsdt" name="txtsdt" type="text" placeholder="Số điện thoại" style="width: 400px;border-radius: 10px" required autofocus>
+									<label class="col-sm-2 control-label">Xác nhận mật khẩu<b style="color: red">*</b></label>
+									<input class="col-sm-10" id="txtxacnhan" name="txtxacnhan" type="password" placeholder="Xác nhận mật khẩu" style="width: 400px" required autofocus>
+							</div>
+							
+							<div class="form-group">
+								<div class="col-sm-offset-2 col-sm-10">
+									<button name="btnDangky" type="submit" class="hvr-shutter-in-vertical hvr-shutter-in-vertical2" style="width:250px; text-align: center;border: none;margin-left: 31.5%">
+										Đăng ký
+									</button>
+								</div>
+							</div>
+						</form>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="footer" style="margin-top: 40px;">
+			<div class="footer-top" style="height: 140px;">
+				<div class="container">
+					<div class="col-md-4 footer-in">
+						<h4><i> </i>SHOWROOM</h4>
+						<p>09 Thái Hà - Hà Nội | 8h30 -18h00<br>Tel 024.35379395 - 0985 985 278</p>
+					</div>
+					<div class="col-md-4 footer-in">
+						<h4><i class="cross"> </i>TRUNG TÂM BẢO HÀNH</h4>
+						<p>Tầng 2 - 09 Thái Hà - Hà Nội<br>Tel 024.3538 1088<br>Mở cửa: 8h30 -18h00 .</p>
+					</div>
+					<div class="col-md-4 footer-in">
+						<h4><i class="down"> </i>THÔNG TIN THANH TOÁN</h4>
+						<p>Vietcombank – CN Hồ Chí Minh<br>Số tài khoản: 0071001023710.</p>
+					</div>
+					<div class="clearfix"></div>
+				</div>
+			</div>
+			<!---->
+			<div class="footer-middle">
+				<div class="container">
+					<div class="footer-middle-in">
+						<h6>About us</h6>
+						<p>Suspendisse sed accumsan risus. Curabitur rhoncus, elit vel tincidunt elementum, nunc urna tristique nisi, in interdum libero magna tristique ante. adipiscing varius. Vestibulum dolor lorem.</p>
+					</div>
+					<div class="footer-middle-in">
+						<h6>Information</h6>
+						<ul>
+							<li><a href="#">About Us</a></li>
+							<li><a href="#">Delivery Information</a></li>
+							<li><a href="#">Privacy Policy</a></li>
+							<li><a href="#">Terms & Conditions</a></li>
+						</ul>
+					</div>
+					<div class="footer-middle-in">
+						<h6>Customer Service</h6>
+						<ul>
+							<li><a href="contact.html">Contact Us</a></li>
+							<li><a href="#">Returns</a></li>
+							<li><a href="#">Site Map</a></li>
+						</ul>
+					</div>
+					<div class="footer-middle-in">
+						<h6>My Account</h6>
+						<ul>
+							<li><a href="account.html">My Account</a></li>
+							<li><a href="#">Order History</a></li>
+							<li><a href="wishlist.html">Wish List</a></li>
+							<li><a href="#">Newsletter</a></li>
+						</ul>
+					</div>
+					<div class="footer-middle-in">
+						<h6>Extras</h6>
+						<ul>
+							<li><a href="#">Brands</a></li>
+							<li><a href="#">Gift Vouchers</a></li>
+							<li><a href="#">Affiliates</a></li>
+							<li><a href="#">Specials</a></li>
+						</ul>
+					</div>
+					<div class="clearfix"></div>
+				</div>
+			</div>
+			<p class="footer-class">Copyright © 2015 Bonfire Template by  <a href="#" target="_blank">Akari</a> </p>
+			<script type="text/javascript">
+						$(document).ready(function() {
+							/*
+							var defaults = {
+					  			containerID: 'toTop', // fading element id
+								containerHoverID: 'toTopHover', // fading element hover id
+								scrollSpeed: 1200,
+								easingType: 'linear' 
+					 		};
+							*/
+							
+							$().UItoTop({ easingType: 'easeOutQuart' });
+							
+						});
+					</script>
+				<a href="#" id="toTop" style="display: block;"> <span id="toTopHover" style="opacity: 1;"> </span></a>
+
+		</div>
+				<a href="#" id="toTop" style="display: block;"> <span id="toTopHover" style="opacity: 1;"> </span></a>
+
+		</div>
+</body>
+</html>
