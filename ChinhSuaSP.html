@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Trang quản trị</title>
+	<meta charset="utf-8">
+
+	<link rel="stylesheet" type="text/css" href="../assets/bootstrap-3.3.7-dist/css/bootstrap.min.css">
+	
+</head>
+<body>
+	
+	<h3 class="future" style="width: 782px;margin-left: 40%;margin-top: 60px; color: blue" >QUẢN LÝ SẢN PHẨM</h3>
+	<div class="container" style="margin-left: 7%;margin-top: 40px">
+		<div class="row">
+			
+			<div class="panel panel-default">
+					<div class="panel-heading">
+						<h3 class="panel-title" style="color: blue">Chỉnh sữa sản phẩm </h3>
+					</div>
+					
+				<div class="panel-body">
+						<form class="form-horizontal" method="POST" action=""  style="color: blue">
+							<div class="form-group">
+								<label for="txtProName" class="col-sm-2 control-label">Sản phẩm</label>
+								<div class="col-sm-10">
+									<input type="text" class="form-control" id="txtProName" name="txtProName" value="">
+								</div>
+							</div>
+							<div class="form-group">
+								<label for="txtTinyDes" class="col-sm-2 control-label">Mô tả</label>
+								<div class="col-sm-10">
+									<input type="text" class="form-control" id="txtTinyDes" name="txtTinyDes" value="">
+								</div>
+							</div>
+							<div class="form-group">
+								<label for="txtPrice" class="col-sm-2 control-label">Giá</label>
+								<div class="col-sm-10">
+									<input type="text" class="form-control" id="txtPrice" name="txtPrice" value="">
+								</div>
+							</div>
+							
+							<div class="form-group">
+								<label for="txtPrice" class="col-sm-2 control-label">Số lượng</label>
+								<div class="col-sm-10">
+									<input type="text" class="form-control" id="txtQuantity" name="txtQuantity" value="">
+								</div>
+							</div>
+							<div class="form-group">
+								<label for="txtPrice" class="col-sm-2 control-label">Xuất xứ</label>
+								<div class="col-sm-10">
+									<input type="text" class="form-control" id="txtXuatxu" name="txtXuatxu" value="">
+								</div>
+							</div>
+							<div class="form-group">
+								<label for="txtPrice" class="col-sm-2 control-label">Ngày nhập </label>
+								<div class="col-sm-10">
+									<input type="date" class="form-control" id="txtngay" name="txtngay" value="">
+								</div>
+							</div>
+							 <div class="form-group">
+								<label for="txtFullDes" class="col-sm-2 control-label">Chi tiết</label>
+								<div class="col-sm-10">
+									<textarea rows="6" id="txtFullDes" name="txtFullDes" class="form-control"></textarea>
+								</div>
+							</div>
+							<div class="form-group">
+								<div class="col-sm-offset-2 col-sm-10">
+									<a class="btn btn-primary" href="DanhSachSP.html" role="button" title="Về thôi">
+						<span class="glyphicon glyphicon-backward"></span>
+					</a>
+									<button class="btn btn-primary" name="btncapnhat" type="submit" >
+										<span class="glyphicon glyphicon-plus"></span>
+										Cập nhật
+									</button>
+
+								</div>
+							</div>
+						</form>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<script src="../assets/tinymce/tinymce.min.js"></script>
+	<script type="text/javascript">
+		tinymce.init({
+		    selector: '#txtFullDes',
+		    menubar: false,
+		    toolbar1: "styleselect | bold italic | link image | alignleft aligncenter alignright | bullist numlist | fontselect | fontsizeselect | forecolor backcolor",
+		    // toolbar2: "",
+		    // plugins: 'link image textcolor',
+		    //height: 300,
+		    // encoding: "xml",
+		});
+	</script>
+	<script src="assets/jquery-3.1.1.min.js"></script>
+	<script src="assets/bootstrap-3.3.7/js/bootstrap.min.js"></script>
+	<!-- <script type="text/javascript">
+		$(function() {
+		    $('#txtCatName').focus();
+		});
+	</script> -->
+</body>
+</html>
